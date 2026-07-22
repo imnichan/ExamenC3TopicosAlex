@@ -1,0 +1,102 @@
+/* =========================================
+   NUEVOS ESTILOS PARA LA PÁGINA MENU.HTML
+   ========================================= */
+
+.menu-page-section {
+    text-align: center;
+    margin-bottom: 80px;
+    padding-top: 20px;
+}
+
+.menu-header {
+    margin-bottom: 40px;
+}
+
+.menu-header h2 {
+    font-size: 28px;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.menu-header .underline {
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Estilos de las Pestañas (Tabs) */
+.menu-tabs {
+    display: inline-flex;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.tab-btn {
+    padding: 10px 50px;
+    border: none;
+    background: transparent;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    color: var(--text-light);
+    transition: all 0.3s;
+}
+
+.tab-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.tab-btn:hover:not(.active) {
+    background-color: #f9f9f9;
+}
+
+/* Grid 3x2 y Cards del Menú */
+.menu-grid-3x2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px;
+}
+
+.menu-item-card {
+    text-align: center;
+}
+
+.menu-item-card img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%; /* Hace la imagen redonda como un plato */
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.menu-item-card h4 {
+    font-size: 16px;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.item-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.item-footer .price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.btn-small {
+    padding: 6px 18px;
+    font-size: 14px;
+    border-radius: 5px;
+}
